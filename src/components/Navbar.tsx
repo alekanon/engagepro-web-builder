@@ -73,8 +73,10 @@ export default function Navbar() {
               {link.name}
             </NavLink>
           ))}
-          <Button className="ml-4" size="sm">
-            Kom i gang
+          <Button className="ml-4" size="sm" asChild>
+            <NavLink to="/contact">
+              Kom i gang
+            </NavLink>
           </Button>
         </nav>
 
@@ -112,7 +114,9 @@ export default function Navbar() {
               {link.name}
             </NavLink>
           ))}
-          <Button className="mt-4 w-full">Kom i gang</Button>
+          <Button className="mt-4 w-full" asChild>
+            <NavLink to="/contact">Kom i gang</NavLink>
+          </Button>
         </nav>
       </div>
     </header>
