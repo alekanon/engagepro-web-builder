@@ -1,4 +1,3 @@
-
 import { ArrowRight, Building, Users, Lightbulb, BarChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -48,8 +47,8 @@ const Index = () => {
                 <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-primary/20 rounded-full filter blur-2xl"></div>
                 <div className="glass-card p-6 md:p-8 rounded-2xl relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1593313637552-29c2c0dacd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                    alt="Byggearbejdere på byggeplads" 
+                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                    alt="Person der arbejder på en computer med digital markedsføring" 
                     className="w-full h-auto rounded-xl shadow-lg object-cover aspect-video"
                   />
                 </div>
@@ -133,14 +132,6 @@ const Index = () => {
                 asChild
               >
                 <Link to="/contact">Kontakt os i dag</Link>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white/10"
-                asChild
-              >
-                <Link to="/book-mode">Book et gratis møde</Link>
               </Button>
             </div>
           </div>

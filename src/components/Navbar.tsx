@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 
 const NavLinks = [
   { name: "Forside", path: "/" },
@@ -73,11 +72,6 @@ export default function Navbar() {
               {link.name}
             </NavLink>
           ))}
-          <Button className="ml-4" size="sm" asChild>
-            <NavLink to="/contact">
-              Kom i gang
-            </NavLink>
-          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -114,9 +108,6 @@ export default function Navbar() {
               {link.name}
             </NavLink>
           ))}
-          <Button className="mt-4 w-full" asChild>
-            <NavLink to="/contact">Kom i gang</NavLink>
-          </Button>
         </nav>
       </div>
     </header>

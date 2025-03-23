@@ -190,21 +190,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h3 className="font-display text-xl font-bold mb-4">Hurtigt svar?</h3>
-              <p className="text-foreground/70 mb-6">
-                Har du brug for et hurtigt svar eller vil du hellere tale med os direkte? Ring til os eller book et uforpligtende møde.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="outline" size="lg" className="flex-1" asChild>
-                  <a href="tel:+4512345678">Ring til os</a>
-                </Button>
-                <Button size="lg" className="flex-1" asChild>
-                  <Link to="/book-mode">Book et møde</Link>
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
