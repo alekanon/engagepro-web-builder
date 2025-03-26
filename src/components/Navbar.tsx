@@ -41,28 +41,28 @@ export default function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
         scrolled 
-          ? "py-4 bg-white/80 backdrop-blur-md shadow-sm" 
-          : "py-6 bg-transparent"
+          ? "py-2 md:py-4 bg-white/95 backdrop-blur-md shadow-sm" 
+          : "py-3 md:py-6 bg-transparent"
       )}
     >
-      <div className="container max-w-7xl flex items-center justify-between">
+      <div className="container max-w-7xl flex items-center justify-between px-4 sm:px-6">
         <NavLink 
           to="/" 
-          className="font-display text-2xl font-bold flex items-center"
+          className="font-display text-xl md:text-2xl font-bold flex items-center"
         >
           <span className="text-primary">Engage</span>
           <span>Pro</span>
         </NavLink>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
           {NavLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
                 cn(
-                  "text-foreground/80 hover:text-primary transition-all duration-300 relative py-2",
+                  "text-foreground/80 hover:text-primary transition-all duration-300 relative py-2 text-sm lg:text-base",
                   isActive && "text-primary font-medium",
                   "after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300",
                   isActive ? "after:w-full" : "after:w-0 hover:after:w-full"
@@ -91,14 +91,14 @@ export default function Navbar() {
           isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
         )}
       >
-        <nav className="flex flex-col space-y-3 p-6">
+        <nav className="flex flex-col space-y-1 p-4">
           {NavLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
                 cn(
-                  "py-2 px-4 rounded-md transition-all duration-300",
+                  "py-3 px-4 rounded-md transition-all duration-300 text-base",
                   isActive
                     ? "bg-primary/10 text-primary font-medium"
                     : "hover:bg-accent"
