@@ -125,3 +125,16 @@
   width: 100%;
   margin: 0 auto;
 }
+
+/* Mobile-specific fixes */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+  
+  h1, h2, h3 {
+    word-break: break-word;
+  }
+}

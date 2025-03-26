@@ -13,7 +13,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-fix">
       {/* Hero Section */}
       <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6">
@@ -34,9 +34,6 @@ const Index = () => {
                     Kontakt os <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
-                  <Link to="/book-mode">Book et gratis møde</Link>
-                </Button>
               </div>
             </div>
             <div className={cn(
@@ -46,11 +43,11 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute -top-16 -right-16 w-64 h-64 bg-primary/10 rounded-full filter blur-3xl"></div>
                 <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-primary/20 rounded-full filter blur-2xl"></div>
-                <div className="glass-card p-4 md:p-6 lg:p-8 rounded-2xl relative">
+                <div className="p-4 md:p-6 lg:p-8 rounded-2xl relative">
                   <img 
                     src="https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                     alt="Digital markedsføring til byggebranchen" 
-                    className="w-full h-auto rounded-xl shadow-lg object-cover aspect-video"
+                    className="w-full h-auto rounded-xl object-cover aspect-video"
                   />
                 </div>
               </div>

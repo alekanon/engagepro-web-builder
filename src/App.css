@@ -35,3 +35,20 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
+/* Mobile fixes */
+@media (max-width: 640px) {
+  .grid {
+    width: 100%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
